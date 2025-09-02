@@ -1,0 +1,18 @@
+fun main() {
+    var number: Int = (0..10).random()
+    var input = -1
+    println("Угадай число:")
+    while (number != input){
+        var input: Int = readln().toString().toInt()
+        if (input > number) {
+            println("Много! Давай поменьше!")
+        }
+        else if (input < number) {
+            println("Мало! Давай побольше!")
+        }
+        else{
+            break
+        }
+    }
+    println("Угадал!")
+}
